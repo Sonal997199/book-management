@@ -16,7 +16,7 @@ const Books = () => {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/books',{
+                const response = await axios.get('https://book-management-lemon.vercel.app/books',{
                     params: {
                         page,
                         page_size: pageSize,
